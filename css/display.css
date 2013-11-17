@@ -238,6 +238,7 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+#input_form_placeholder,
 legend,
 #footer,
 #notices_primary h2,
@@ -351,6 +352,7 @@ label.notice_data-geo {
     background-position: 0 -1780px;
 }
 
+/* Character counter */
 .count {
     color: #999;
     float: right;
