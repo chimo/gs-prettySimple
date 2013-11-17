@@ -372,3 +372,22 @@ label.notice_data-geo {
     margin-top: 24px;
     position: absolute;
 }
+
+/* "Attach a file" thumbnail preview  */
+.attach-status {
+    margin-top: 12px;
+}
+.attach-status code {
+    display: block;
+    float: left;
+    margin-top: 7px;
+}
+.attach-status img {
+    display: block;
+    margin-top: 5px;
+}
+
+.user_in #content h1 {
+    margin-top: 30px;
+}
+
