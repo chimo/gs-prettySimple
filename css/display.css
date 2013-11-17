@@ -208,12 +208,21 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
     text-align: left;
 }
 #input_form_nav {
+    background: #EEE;
+    border: 1px solid #AAB8C6;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
     display: inline-block;
     list-style-type: none;
+    margin: 0;
+    padding: 12px;
 }
 #input_form_nav li {
     float: left;
     margin-right: 10px;
+}
+#input_form_nav li:last-child {
+    margin: 0;
 }
 
 /* Custom Footer */
