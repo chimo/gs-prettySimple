@@ -18,21 +18,27 @@ body {
     font-size: 1.25em;
     margin: 0;
 }
+fieldset {
+    border: 0;
+    padding: 0;
+}
 #wrap {
     padding-top: 0;
 }
-
 #content h1 {
     font-size: 3em;
     margin-top: 60px;
     text-align: center;
 }
-a {
-    transition: all 0.2s ease 0s;
+.user_in #content h1 {
+    margin-top: 30px;
 }
 #core {
     margin: 0 auto;
     max-width: 960px;
+}
+a {
+    transition: all 0.2s ease 0s;
 }
 #content a {
     color: #0097BB;
@@ -165,10 +171,6 @@ a.embed {
 .notice-options a {
     text-indent: -9999px;
 }
-fieldset {
-    border: 0;
-    padding: 0;
-}
 .notice-options form, .notice-options a, .notice-options .repeated {
     display: block;
     float: left;
@@ -238,6 +240,15 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+#showstream .notice .author,
+.profile_block h2,
+.profile_block .entity_actions li,
+.profile_block_name,
+.profile_block_location,
+.profile_block_homepage,
+.profile_block_description,
+.user_profile_tags,
+.notice-reply-placeholder,
 #input_form_placeholder,
 legend,
 #footer,
@@ -245,7 +256,7 @@ legend,
 #site_nav_global_secondary,
 #export_data,
 #tagcloud,
-#aside_primary,
+#aside_primary .section,
 #site_nav_local_views,
 .nav #nav_login,
 #site_contact,
@@ -255,6 +266,8 @@ legend,
 }
 
 /* Okay, display _some_ of the things... */
+#aside_primary .profile_block,
+.profile_block li.entity_subscribe,
 .input_form.current {
     display: block;
 }
@@ -289,8 +302,6 @@ legend,
     background-color: #1A1A1A;
     box-shadow: 0 0 1px #FFF inset;
 }
-
-
 
 /* Tests */
 #notice_data-text-label, .notice_data-text {
@@ -387,7 +398,97 @@ label.notice_data-geo {
     margin-top: 5px;
 }
 
-.user_in #content h1 {
-    margin-top: 30px;
+/* Parentheses around "in context" */
+.response:before {
+    color: #000;
+    content: "(";
+}
+.response:after {
+    color: #000;
+    content: ")";
 }
 
+/* Notice likes and "See all replies" */
+.notice-faves, .notice-reply-comments {
+    margin-left: 19px;
+    margin-bottom: 12px;
+}
+.notices .notices .notice {
+    border-bottom: 0;
+    border-top: 1px solid #DDD;
+}
+
+.entity_subscribe {
+    list-style-type: none;
+}
+
+.notice div.notice-faves, .notice div.thumbnails {
+    float: none;
+}
+
+#showstream .notice .entry-content, #showstream .notice .entry-title {
+    margin-left: 0;
+}
+
+#showstream #aside_primary {
+    left: 50%;
+    margin-left: -43px;
+    position: absolute;
+    text-align: center;
+    top: 3.3em;
+}
+
+#showstream h1 {
+    margin-top: 2em !important;
+}
+
+#showstream .ur_face {
+    border-radius: 52%;
+}
+
+#showstream.user_in #aside_primary {
+    top: 6em;
+}
+
+.profile_block .entity_actions ul {
+    margin: 0;
+    padding: 0;
+}
+
+.profile_block .entity_actions .entity_remote_subscribe {
+    background: url(../images/icons/subscribe.png) no-repeat;
+    display: inline-block;
+    height: 34px;
+    outline: 0;
+    left: 120px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 31px;
+    width: 34px;
+}
+
+#form_ostatus_connect {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#form_ostatus_connect fieldset {
+    background: #FFF;
+    display: inline-block;
+    margin-top: 8.5em;
+    padding: 8px;
+}
+
+#form_ostatus_connect .close {
+    position: relative;
+    right: 40px;
+}
+
+#form_ostatus_connect .form_data li {
+    display: list-item;
+    list-style-type: none;
+}
