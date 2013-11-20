@@ -25,13 +25,18 @@ fieldset {
 #wrap {
     padding-top: 0;
 }
-#content h1 {
+h1 {
     font-size: 3em;
     margin-top: 60px;
     text-align: center;
 }
-.user_in #content h1 {
+.user_in h1 {
     margin-top: 30px;
+}
+#showstream h1,
+#subscriptions h1,
+#subscribers h1 {
+    margin-top: 2em;
 }
 #core {
     margin: 0 auto;
@@ -128,7 +133,7 @@ a.embed {
     padding: 40px 0;
     position: relative;
 }
-.avatar {
+.notice .avatar {
     left: 0;
     position: absolute;
     vertical-align: middle;
@@ -240,6 +245,7 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+#all #aside_primary,
 #showstream .notice .author,
 .profile_block h2,
 .profile_block .entity_actions li,
@@ -434,7 +440,7 @@ label.notice_data-geo {
     margin-left: 0;
 }
 
-#showstream #aside_primary {
+#aside_primary {
     left: 50%;
     margin-left: -43px;
     position: absolute;
@@ -442,15 +448,11 @@ label.notice_data-geo {
     top: 3.3em;
 }
 
-#showstream h1 {
-    margin-top: 2em !important;
-}
-
-#showstream .ur_face {
+.ur_face {
     border-radius: 52%;
 }
 
-#showstream.user_in #aside_primary {
+.user_in #aside_primary {
     top: 6em;
 }
 
@@ -495,4 +497,32 @@ label.notice_data-geo {
 #form_ostatus_connect .form_data li {
     display: list-item;
     list-style-type: none;
+}
+
+/* Profiles (subscriptions, subscribers) */
+.profiles {
+    list-style-type: none;
+}
+.profile {
+    border-bottom: 1px solid #DDD;
+    padding: 40px 0;
+}
+.profile .url:last-child {
+    display: block;
+}
+.profile .avatar {
+    float: left;
+    margin-right: 10px;
+}
+.profile .fn:before {
+    content: "(";
+}
+.profile .fn:after {
+    content: ")";
+}
+.profile .label, .profile .fn {
+    margin-left: 10px;
+}
+.profile .note {
+    margin-left: 60px;
 }
