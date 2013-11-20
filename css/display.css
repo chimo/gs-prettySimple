@@ -248,7 +248,6 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 .profile_block_homepage,
 .profile_block_description,
 .user_profile_tags,
-.notice-reply-placeholder,
 #input_form_placeholder,
 legend,
 #footer,
@@ -264,6 +263,11 @@ legend,
 .input_form {
     display: none;
 }
+/* Go away, I mean it! */
+.notice-reply-placeholder {
+    display: none !important;
+}
+
 
 /* Okay, display _some_ of the things... */
 #aside_primary .profile_block,
