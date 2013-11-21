@@ -214,6 +214,11 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 .input_forms .input_form {
     text-align: left;
 }
+#showstream .input_form,
+#subscriptions .input_form,
+#subscribers .input_form {
+    margin: 6em 0 -4em 0;
+}
 #input_form_nav {
     background: #EEE;
     border: 1px solid #AAB8C6;
@@ -245,6 +250,7 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+.system_notice,
 #all #aside_primary,
 #showstream .notice .author,
 .profile_block h2,
@@ -507,8 +513,14 @@ label.notice_data-geo {
     border-bottom: 1px solid #DDD;
     padding: 40px 0;
 }
-.profile .url:last-child {
+.profile .entity_actions {
+    overflow: hidden;
+}
+.profile .url {
     display: block;
+}
+.profile .url[rel*="contact"] {
+    display: inline;
 }
 .profile .avatar {
     float: left;
@@ -525,4 +537,41 @@ label.notice_data-geo {
 }
 .profile .note {
     margin-left: 60px;
+}
+
+/* Remote subscribe */
+.entity_remote_subscribe {
+    background: url(../images/icons/subscribe.png) no-repeat;
+    display: inline-block;
+    line-height: 34px;
+    min-height: 34px;
+    padding-left: 45px;
+}
+
+/* Subscribe, unsubscribe, block buttons */
+.form_user_unsubscribe, .form_user_subscribe {
+    float: left;
+    min-width: 185px;
+}
+.form_user_unsubscribe .submit, .form_user_block .submit, .entity_subscribe .submit {
+    background: url(../images/icons/subscribe.png) no-repeat;
+    border: 0;
+    color: #0097BB;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    min-height: 34px;
+    padding-left: 45px;
+}
+.form_user_unsubscribe .submit:hover, .form_user_block .submit:hover, .entity_subscribe .submit:hover {
+    text-decoration: underline;
+}
+.form_user_block .submit {
+    background-image: url(../images/icons/block.png);
+}
+.form_user_unsubscribe .submit {
+    background-image: url(../images/icons/unsubscribe.png);
+}
+.entity_actions {
+    clear: left;
 }
