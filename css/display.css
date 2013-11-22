@@ -250,6 +250,7 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+.form_guide,
 .system_notice,
 #all #aside_primary,
 #showstream .notice .author,
@@ -341,6 +342,12 @@ legend,
 .geo_status {
     float: left;
     margin-top: 3px;
+}
+
+.input_form .form_data {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 button.close {
@@ -574,4 +581,37 @@ label.notice_data-geo {
 }
 .entity_actions {
     clear: left;
+}
+
+/* Bookmark, event, poll, question forms */
+#input_form_bookmark .submit,
+#input_form_question .submit,
+#input_form_event .submit,
+#input_form_poll .submit {
+    margin-top: 12px;
+}
+#input_form_bookmark .form_data li,
+#input_form_question .form_data li,
+#input_form_poll .form_data li,
+#input_form_event .form_data li {
+    margin-bottom: 12px;
+    position: relative;
+}
+#input_form_bookmark .form_data label,
+#input_form_question .form_data label,
+#input_form_poll .form_data label,
+#input_form_event .form_data label {
+    color: #999;
+    float: left;
+    font-size: 0.8em;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+#input_form_event label[for="event-starttime"],
+#input_form_event label[for="event-endtime"] {
+    color: #000;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: static;
 }
