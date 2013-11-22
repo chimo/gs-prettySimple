@@ -257,6 +257,9 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+#conversation #aside_primary,
+#replies #aside_primary,
+#conversationreplies #aside_primary,
 .form_guide,
 .system_notice,
 #all #aside_primary,
