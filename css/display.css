@@ -131,6 +131,7 @@ a.embed {
 .notice {
     border-bottom: 1px solid #DDD;
     padding: 40px 0;
+    overflow: hidden;
     position: relative;
 }
 .notice .avatar {
@@ -151,6 +152,12 @@ a.embed {
 }
 .notice .addressees:before {
     content: "▸";
+}
+.threaded-replies {
+    overflow: hidden;
+}
+.threaded-replies li:first-child {
+    margin-top: 40px;
 }
 .threaded-replies li:last-child {
     border: 0;
