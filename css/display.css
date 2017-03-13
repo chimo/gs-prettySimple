@@ -138,8 +138,9 @@ a.embed {
     position: relative;
 }
 .notice .avatar {
+    border-radius: 50%;
     left: 0;
-    position: absolute;
+    position: static;
     vertical-align: middle;
 }
 #content .notice .entry-title {
