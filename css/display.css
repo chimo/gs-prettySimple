@@ -283,8 +283,11 @@ legend,
 #site_nav_local_views,
 .nav #nav_login,
 #site_contact,
-#header-search, 
-.input_form {
+#header-search,
+.input_form,
+.notice_data-attach,
+[name='notice_data-geo'],
+.profile_block_otherprofile_list {
     display: none;
 }
 /* Go away, I mean it! */
