@@ -687,6 +687,12 @@ label.notice_data-geo {
     display: none;
 }
 
+/* top nav */
+.nav {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
 .bookmark .entry-title {
     margin-left: 0;
 }
