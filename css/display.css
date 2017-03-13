@@ -48,6 +48,10 @@ a {
     text-decoration: underline;
 }
 
+.inline-attachment .u-photo {
+    max-width: 100%;
+}
+
 /* Sprites */
 label.notice_data-geo,
 label.notice_data-attach,
@@ -247,6 +251,7 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 }
 
 /* Hide all the things o/! */
+#attachment #content h1,                /* Attachment hash; it's super long... */
 #conversation #aside_primary,
 #replies #aside_primary,
 #conversationreplies #aside_primary,
@@ -280,6 +285,11 @@ legend,
     display: none !important;
 }
 
+.attachments,
+.attach-status {
+    list-style-type: none;
+    padding-left: 0;
+}
 
 /* Okay, display _some_ of the things... */
 #aside_primary .profile_block,
