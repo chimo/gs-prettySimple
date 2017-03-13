@@ -81,12 +81,13 @@ button.close,
 /* Pagination */
 #pagination {
     list-style-type: none;
+    overflow: hidden;
 }
 #pagination .nav_next {
     float: right;
 }
 #pagination .nav_next a {
-    background-position: 115% -252px; 
+    background-position: 115% -252px;
     padding: 6px 25px 0 0;
 }
 #pagination .nav_prev {
