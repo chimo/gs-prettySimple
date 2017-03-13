@@ -300,6 +300,11 @@ legend,
     padding-left: 0;
 }
 
+#notice_action-submit {
+    position: relative;
+    top: 10px;
+}
+
 /* Okay, display _some_ of the things... */
 #aside_primary .profile_block,
 .profile_block li.entity_subscribe,
@@ -687,13 +692,33 @@ label.notice_data-geo {
     display: none;
 }
 
+#showgroup h1 {
+    margin-top: 120px;
+}
+
 /* top nav */
 .nav {
     font-size: 0.875rem;
     text-transform: uppercase;
 }
 
+[for="input_form_nav"] {
+    display: none;
+}
+
 .bookmark .entry-title {
     margin-left: 0;
+}
+
+.parents {
+    display: inline;
+}
+
+.oembed {
+    overflow: hidden;
+}
+
+.notice_data-text {
+    padding-top: 8px;
 }
 
