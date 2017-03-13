@@ -643,3 +643,32 @@ label.notice_data-geo {
 #form_settings_profile input.checkbox {
     margin: 0;
 }
+
+/* CSS for new microformat2 */
+.bookmark .entry-title .entry-content,
+.notice .entry-title .entry-content {
+    float: none;
+    margin: 0;
+}
+
+.p-name.metadata {
+    display: none;
+}
+
+.e-content {
+    margin-top: 8px;
+}
+
+.addressees, .addressees .h-card {
+    display: inline;
+    padding: 0;
+}
+
+.notice-headers > .u-uid {
+    display: none;
+}
+
+.bookmark .entry-title {
+    margin-left: 0;
+}
+
