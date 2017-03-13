@@ -28,18 +28,23 @@ h1 {
 #subscribers h1 {
     margin-top: 2em;
 }
-#core {
+#core,
+#footer {
     margin: 0 auto;
     max-width: 960px;
 }
 a {
     transition: all 0.2s ease 0s;
 }
-#content a {
+#content a,
+#footer a {
     color: #0097BB;
     text-decoration: none;
 }
-#content a:hover, a:focus {
+#content a:hover,
+#content a:focus,
+#footer a:hover,
+#footer a:focus {
     text-decoration: underline;
 }
 
@@ -234,16 +239,11 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
     margin: 0;
 }
 
-/* Custom Footer */
-#afterFooter {
-    clear: both;
-    color: #555;
-    font-size: 0.88em;
-    margin-top: 100px;
-    text-align: center;
-}
-#afterFooter a, #afterFooter a:visited {
-    color: #555;
+#footer {
+    border-top: 2px solid #000;
+    font-size: 50%;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 /* Hide all the things o/! */
@@ -263,7 +263,6 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 .user_profile_tags,
 #input_form_placeholder,
 legend,
-#footer,
 #notices_primary h2,
 #site_nav_global_secondary,
 #export_data,
