@@ -268,7 +268,6 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 #showstream .notice .author,
 .profile_block h2,
 .profile_block .entity_actions li,
-.profile_block_name,
 .profile_block_location,
 .profile_block_homepage,
 .profile_block_description,
@@ -339,7 +338,22 @@ legend,
     box-shadow: 0 0 1px #FFF inset;
 }
 
-/* Tests */
+/* Profile block */
+.profile_block_name {
+    margin: 0;
+}
+.profile_block_name a {
+    display: block;
+    height: 96px;
+    left: 0;
+    margin: 0;
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 96px;
+}
+
 #notice_data-text-label, .notice_data-text {
     display: block;
 }
