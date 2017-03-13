@@ -207,7 +207,9 @@ a.embed {
     background-position: 0 -1582px;
 }
 .notice-options .repeated {
+    background-image: url(../images/icons/icons-01.gif);
     background-position: 0 -1648px;
+    font-size: 0;
 }
 label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button.close {
     border: 0;
