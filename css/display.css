@@ -101,7 +101,10 @@ button.close,
 /* EmbedNotice Plugin */
 a.embed {
     background: url(../images/icons/embed.gif) no-repeat;
+    float: right;
     opacity: 1;
+    text-indent: -9999px;
+    width: 16px;
 }
 
 /* Bookmark Notice */
