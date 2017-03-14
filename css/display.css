@@ -123,6 +123,14 @@ a.embed {
     border-bottom: 0;
 }
 
+/* Avatars */
+.avatar {
+    border-radius: 50%;
+    left: 0;
+    position: static;
+    vertical-align: middle;
+}
+
 /* Notices */
 .entry-title {
     max-width: 640px;
@@ -136,12 +144,6 @@ a.embed {
     padding: 40px 0;
     overflow: hidden;
     position: relative;
-}
-.notice .avatar {
-    border-radius: 50%;
-    left: 0;
-    position: static;
-    vertical-align: middle;
 }
 #content .notice .entry-title {
     margin: 2px 7px 0 59px;
