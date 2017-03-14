@@ -553,8 +553,13 @@ label.notice_data-geo {
 }
 
 /* Profiles (subscriptions, subscribers) */
-.profiles {
+.profile_list,
+.profile_list .entity_actions ul {
     list-style-type: none;
+    padding: 0;
+}
+.profile_list .entity_actions {
+    margin-left: 60px;
 }
 .profile {
     border-bottom: 1px solid #DDD;
