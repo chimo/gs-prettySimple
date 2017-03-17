@@ -159,6 +159,10 @@ a.embed {
 .notice .addressees:before {
     content: "▸";
 }
+.addressees, .addressees > li {
+    display: inline;
+    padding: 0;
+}
 .threaded-replies {
     overflow: hidden;
 }
@@ -688,11 +692,6 @@ label.notice_data-geo {
 
 .e-content {
     margin-top: 8px;
-}
-
-.addressees, .addressees .h-card {
-    display: inline;
-    padding: 0;
 }
 
 .notice-headers > .u-uid {
