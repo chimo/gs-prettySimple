@@ -555,13 +555,15 @@ label.notice_data-geo {
     display: list-item;
     list-style-type: none;
 }
-
 /* Profiles (subscriptions, subscribers) */
+.groups,
+.groups .entity_actions ul,
 .profile_list,
 .profile_list .entity_actions ul {
     list-style-type: none;
     padding: 0;
 }
+.groups .entity_actions,
 .profile_list .entity_actions {
     margin-left: 60px;
 }
