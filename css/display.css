@@ -267,6 +267,8 @@ label.notice_data-geo, label.notice_data-attach, .notice-options .submit, button
 #attachment #content h1,                /* Attachment hash; it's super long... */
 #conversation #aside_primary,
 #replies #aside_primary,
+#noticesearch .input_forms,
+#noticesearch #aside_primary,
 #conversationreplies #aside_primary,
 .form_guide,
 .system_notice,
