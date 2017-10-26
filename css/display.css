@@ -32,6 +32,7 @@ h1 {
 #footer {
     margin: 0 auto;
     max-width: 960px;
+    padding: 0 20px;
 }
 a {
     transition: all 0.2s ease 0s;
@@ -138,6 +139,7 @@ a.embed {
 .notices {
     clear: both;
     list-style-type: none;
+    padding: 0;
 }
 .notice {
     border-bottom: 1px solid #DDD;
@@ -346,7 +348,9 @@ legend,
     padding: 6px 10px;
     text-decoration: none;
 }
-#site_nav_global_primary a:hover, #site_nav_global_primary a:active {
+#site_nav_global_primary a:hover,
+#site_nav_global_primary a:focus,
+#site_nav_global_primary a:active {
     background-color: #1A1A1A;
     box-shadow: 0 0 1px #FFF inset;
 }
@@ -730,5 +734,39 @@ label.notice_data-geo {
 
 .notice_data-text {
     padding-top: 8px;
+}
+
+#form_login input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#form_login [type="checkbox"] {
+    display: inline-block;
+    margin: 0;
+}
+
+#form_login .submit {
+    margin-top: 15px;
+}
+
+@media (max-width: 48em) {
+    h1 {
+        margin-top: 30px;
+    }
+
+    #site_nav_global_primary .nav {
+        border-radius: 0;
+        display: block;
+        padding: 0;
+    }
+
+    #site_nav_global_primary .nav li {
+        float: none;
+    }
+
+    #site_nav_global_primary a {
+        border-radius: 0;
+    }
 }
 
