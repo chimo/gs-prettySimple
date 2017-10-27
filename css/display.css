@@ -791,6 +791,45 @@ label.notice_data-geo {
     margin-top: 15px;
 }
 
+/**
+ * Notice Preview plugin compatibility
+ */
+.chr-notice-preview-container #notice_to {
+	width: 100%;
+}
+.chr-notice-preview-container .to-selector,
+.chr-notice-preview-container .notice_data-geo_wrap,
+.chr-notice-preview-container label.notice_data-attach {
+    float: none;
+}
+.chr-notice-preview-container .to-selector {
+    margin: 0;
+    position: static;
+}
+.chr-notice-preview-container .notice_data-geo_wrap,
+.chr-notice-preview-container label.notice_data-attach {
+    margin: 0;
+    position: absolute;
+    bottom: -10px;
+}
+#input_form_status_enhanced {
+    margin-top: 25px;
+}
+#input_form_status_enhanced #notice_action-submit {
+	float: none;
+    margin-left: 30px;
+    position: static;
+}
+.chr-notice-preview-container label.notice_data-attach {
+    right: 30px;
+}
+.chr-notice-preview-container .notice_data-geo_wrap {
+    right: 60px;
+}
+#chr-notice-compose {
+    position: relative;
+}
+
 @media (max-width: 48em) {
     h1 {
         margin-top: 30px;
