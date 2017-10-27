@@ -795,7 +795,7 @@ label.notice_data-geo {
  * Notice Preview plugin compatibility
  */
 .chr-notice-preview-container #notice_to {
-	width: 100%;
+    width: 100%;
 }
 .chr-notice-preview-container .to-selector,
 .chr-notice-preview-container .notice_data-geo_wrap,
@@ -816,7 +816,7 @@ label.notice_data-geo {
     margin-top: 25px;
 }
 #input_form_status_enhanced #notice_action-submit {
-	float: none;
+    float: none;
     margin-left: 30px;
     position: static;
 }
