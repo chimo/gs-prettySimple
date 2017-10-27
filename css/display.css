@@ -772,7 +772,9 @@ label.notice_data-geo {
 .oembed {
     overflow: hidden;
 }
-
+.oembed .error {
+    display: none;
+}
 .notice_data-text {
     padding-top: 8px;
 }
