@@ -873,6 +873,102 @@ label.notice_data-geo {
 #chr-notice-compose {
     position: relative;
 }
+#input_form_status_enhanced {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Test showing some user info
+ */
+
+#site_nav_local_views_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    order: 2;
+}
+
+#aside_primary {
+    background: #000;
+    border: 1px solid #aab8c6;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0;
+    margin: 2em 0 0 0;
+    order: 1;
+    position: relative;
+    top: 0 !important;
+}
+
+#aside_primary a:link,
+#aside_primary a:visited {
+    color: #0097bb;
+    text-decoration: none;
+}
+
+#aside_primary a:hover,
+#aside_primary a:focus {
+    text-decoration: underline;
+}
+
+#aside_primary h2 {
+    font-size: 1em;
+}
+
+.profile_block_name a {
+    left: 50%;
+    margin-left: -48px;
+    top: 8px;
+}
+
+.account_profile_block {
+    background: #eee;
+    padding: 8px 16px 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#entity_subscriptions,
+#entity_subscribers,
+#entity_groups {
+    color: #fff;
+}
+
+#entity_subscriptions {
+    padding-left: 16px;
+}
+
+#entity_groups {
+    padding-right: 16px;
+}
+
+#content h1 {
+    margin-top: 20px;
+}
+
+#showstream .input_form, #subscriptions .input_form, #subscribers .input_form {
+    margin: 20px 0 0 0;
+}
+
+.aside #entity_subscriptions,
+.aside #entity_subscribers,
+.aside #entity_groups {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#entity_groups .groups,
+#entity_groups .entity_actions,
+#entity_subscribers .users,
+#entity_subscriptions .users,
+#entity_subscriptions .entity_actions {
+    display: none;
+}
 
 @media (max-width: 48em) {
     h1 {
