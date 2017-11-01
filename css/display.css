@@ -794,6 +794,36 @@ label.notice_data-geo {
 }
 
 /**
+ * Markdown plugin compatibility
+ */
+.input_form .notice_data-markdown_wrap label {
+    float: left;
+    margin-right: 10px;
+    position: static;
+}
+.input_form .notice_data-markdown_wrap input {
+    display: none;
+}
+.notice_data-geo_wrap {
+    margin-right: 10px;
+}
+.notice_data-markdown_wrap {
+    overflow: hidden;
+}
+.notice_data-markdown_wrap .notice_data-markdown {
+    background-image: url("../images/markdown-disabled.png");
+}
+.form_notice .notice_data-markdown_wrap .checkbox:checked + .notice_data-markdown {
+    background-image: url("../images/markdown-enabled.png");
+}
+.notice code {
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    color: #c7254e;
+    padding: 2px 4px;
+}
+
+/**
  * Notice Preview plugin compatibility
  */
 .chr-notice-preview-container #notice_to {
