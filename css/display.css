@@ -63,7 +63,9 @@ a {
 #footer a:focus {
     text-decoration: underline;
 }
-
+.threaded-replies .attachments .inline-attachment {
+    margin-top: 10px;
+}
 .inline-attachment .u-photo {
     max-width: 100%;
 }
@@ -159,14 +161,13 @@ a.embed {
 .notice {
     border-bottom: 1px solid #DDD;
     padding: 40px 0;
-    overflow: hidden;
     padding-left: 70px;
     position: relative;
 }
-#content .notice-headers .p-author {
+#content .notice-headers > .h-card {
     margin-left: -65px;
 }
-#content .notice-headers .p-author .avatar {
+#content .notice-headers > .h-card .avatar {
     margin-right: 10px;
 }
 #content .notice .entry-title {
@@ -351,7 +352,7 @@ legend,
     padding-left: 0;
 }
 
-#notice_action-submit {
+.form-notice .submit {
     position: relative;
     top: 10px;
 }
@@ -423,7 +424,6 @@ legend,
 
 .to-selector, .notice_data-geo_wrap {
     float: left;
-    margin-bottom: 40px;
 }
 
 .to-selector, .geo_status_wrapper {
@@ -458,11 +458,13 @@ button.close {
     background-image: url(../images/icons/lock.png);
 }
 
-#input_form_status {
-    border-bottom: 1px solid #DDD;
+.input_forms .input_form {
+    border-bottom: 1px solid #ddd;
     padding-bottom: 12px;
 }
-
+.input_forms .submit {
+    margin-top: 70px;
+}
 label.notice_data-attach {
     background-position: 0 -328px;
     float: left;
@@ -487,15 +489,19 @@ label.notice_data-geo {
     top: -28px;
 }
 
-#notice_action-submit {
+.form-notice .submit {
     clear: both;
     display: block;
 
 }
 
 .to-selector {
-    margin-top: 24px;
+    margin-top: 35px;
     position: absolute;
+}
+
+.to-selector select {
+    width: 90%;
 }
 
 /* "Attach a file" thumbnail preview  */
@@ -776,7 +782,7 @@ label.notice_data-geo {
     display: none;
 }
 .notice_data-text {
-    padding-top: 8px;
+    padding: 8px;
 }
 
 #form_login input {
@@ -879,6 +885,15 @@ label.notice_data-geo {
 
     #site_nav_global_primary a {
         border-radius: 0;
+    }
+
+    .to-selector label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .input_forms .submit {
+        margin-top: 100px;
     }
 }
 
