@@ -846,16 +846,22 @@ label.notice_data-geo {
 }
 .chr-notice-preview-container .notice_data-geo_wrap,
 .chr-notice-preview-container label.notice_data-attach {
+    bottom: -10px;
     margin: 0;
     position: absolute;
-    bottom: -10px;
 }
-#input_form_status_enhanced {
+.notice-reply .input_form_status_enhanced .form_notice input.submit {
+    float: none;
+    margin: 0 0 10px 37px;
+    position: static;
+}
+.chr-top-input {
     margin-top: 25px;
 }
-#input_form_status_enhanced #notice_action-submit {
+.chr-top-input .form_notice .submit {
     float: none;
     margin-left: 30px;
+    margin-top: 0;
     position: static;
 }
 .chr-notice-preview-container label.notice_data-attach {
