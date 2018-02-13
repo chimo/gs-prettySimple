@@ -999,3 +999,16 @@ label.notice_data-geo {
     }
 }
 
+@media (max-width: 576px) {
+    .aside #entity_subscriptions,
+    .aside #entity_subscribers,
+    .aside #entity_groups {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
